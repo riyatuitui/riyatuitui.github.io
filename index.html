@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Riya Tuitui — QA Engineer & BIM Student</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== LOADING SCREEN ===== -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">RT</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+      <p class="loader-text">Initializing...</p>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Riya<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-content" data-animate>
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span>Available for Opportunities</span>
+        </div>
+        <h1 class="hero-name">Riya <span class="accent">Tuitui</span></h1>
+        <div class="hero-title-wrap">
+          <span class="hero-title-static">I'm a </span>
+          <span class="hero-typing" id="typingText"></span>
+          <span class="cursor-blink">|</span>
+        </div>
+        <p class="hero-intro">
+          Detail-oriented QA Engineer with hands-on experience in manual testing and basic automation testing.
+          Passionate about software quality, problem-solving, and continuous learning.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">
+            <i class="fa-solid fa-paper-plane"></i> Contact Me
+          </a>
+          <a href="#" class="btn btn-outline" id="downloadCV">
+            <i class="fa-solid fa-download"></i> Download CV
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num counter" data-target="10">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Test Cases</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num counter" data-target="3">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Months XP</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num counter" data-target="5">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Tools Used</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-animate-right>
+        <div class="profile-card">
+          <div class="profile-glow"></div>
+          <div class="profile-avatar">
+            <div class="avatar-illustration">
+              <svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
+                <!-- Body -->
+                <ellipse cx="100" cy="190" rx="55" ry="30" fill="var(--accent-2)" opacity="0.3"/>
+                <!-- Shirt -->
+                <path d="M55 145 Q100 135 145 145 L150 220 H50 Z" fill="var(--accent)" opacity="0.9"/>
+                <!-- Neck -->
+                <rect x="88" y="108" width="24" height="20" rx="5" fill="#f4c2a1"/>
+                <!-- Head -->
+                <ellipse cx="100" cy="90" rx="38" ry="42" fill="#f4c2a1"/>
+                <!-- Hair -->
+                <path d="M62 85 Q65 40 100 38 Q135 40 138 85 Q130 60 100 58 Q70 60 62 85Z" fill="#2d1b00"/>
+                <!-- Hair bun/detail -->
+                <ellipse cx="100" cy="40" rx="18" ry="12" fill="#3d2500"/>
+                <!-- Eyes -->
+                <ellipse cx="86" cy="88" rx="5" ry="5.5" fill="#fff"/>
+                <ellipse cx="114" cy="88" rx="5" ry="5.5" fill="#fff"/>
+                <circle cx="87" cy="89" r="3" fill="#2d1b00"/>
+                <circle cx="115" cy="89" r="3" fill="#2d1b00"/>
+                <circle cx="88" cy="87.5" r="1" fill="#fff"/>
+                <circle cx="116" cy="87.5" r="1" fill="#fff"/>
+                <!-- Eyebrows -->
+                <path d="M80 80 Q86 76 92 80" stroke="#2d1b00" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <path d="M108 80 Q114 76 120 80" stroke="#2d1b00" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <!-- Nose -->
+                <path d="M97 95 Q100 100 103 95" stroke="#d4966e" stroke-width="1.5" fill="none"/>
+                <!-- Smile -->
+                <path d="M89 104 Q100 112 111 104" stroke="#c0724a" stroke-width="2" fill="none" stroke-linecap="round"/>
+                <!-- Ears -->
+                <ellipse cx="62" cy="91" rx="6" ry="8" fill="#f4c2a1"/>
+                <ellipse cx="138" cy="91" rx="6" ry="8" fill="#f4c2a1"/>
+                <!-- Laptop -->
+                <rect x="60" y="165" width="80" height="5" rx="2" fill="#333" opacity="0.8"/>
+                <rect x="65" y="140" width="70" height="28" rx="3" fill="#1a1a2e" opacity="0.9"/>
+                <rect x="68" y="143" width="64" height="22" rx="2" fill="#0d1117"/>
+                <!-- Code lines on laptop -->
+                <rect x="70" y="146" width="25" height="2" rx="1" fill="var(--accent)" opacity="0.8"/>
+                <rect x="70" y="150" width="40" height="2" rx="1" fill="#64ffda" opacity="0.6"/>
+                <rect x="70" y="154" width="30" height="2" rx="1" fill="#ff6b9d" opacity="0.6"/>
+                <rect x="70" y="158" width="20" height="2" rx="1" fill="var(--accent)" opacity="0.5"/>
+              </svg>
+            </div>
+          </div>
+          <div class="profile-badge-qa">
+            <i class="fa-solid fa-bug"></i> QA Engineer
+          </div>
+          <div class="profile-badge-bim">
+            <i class="fa-solid fa-graduation-cap"></i> BIM Student
+          </div>
+        </div>
+        <!-- Floating tech cards -->
+        <div class="float-card float-1">
+          <i class="fa-solid fa-check-circle"></i>
+          <span>Test Passed</span>
+        </div>
+        <div class="float-card float-2">
+          <i class="fa-solid fa-bug"></i>
+          <span>Bug Found!</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll Down</span>
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text" data-animate>
+          <p class="about-intro">
+            Hi! I'm <strong>Riya Tuitui</strong> — a passionate QA Engineer and final-year BIM student based in Bhaktapur, Nepal.
+            I thrive at the intersection of <em>software quality</em> and <em>problem-solving</em>.
+          </p>
+          <p>
+            Currently interning at <strong>TechAxis</strong> as a QA Intern (Feb 2026 – Present), I've been honing my
+            skills in manual testing, test case design, and bug documentation for real-world web applications.
+          </p>
+          <p>
+            I'm a quick learner with a strong problem-solving mindset, deeply passionate about frontend behavior validation,
+            exploratory testing, and building software that users can rely on.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fa-solid fa-university"></i>
+              <div>
+                <strong>Bachelor in Information Management (BIM)</strong>
+                <span>8th Semester — Bhaktapur Multiple Campus</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-briefcase"></i>
+              <div>
+                <strong>QA Intern @ TechAxis</strong>
+                <span>Feb 2026 – Present</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <i class="fa-solid fa-map-marker-alt"></i>
+              <div>
+                <strong>Location</strong>
+                <span>Bhaktapur, Nepal</span>
+              </div>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary mt-1">
+            <i class="fa-solid fa-envelope"></i> Let's Connect
+          </a>
+        </div>
+        <div class="about-cards" data-animate-right>
+          <div class="info-card glass">
+            <i class="fa-solid fa-magnifying-glass card-icon"></i>
+            <h4>Detail Oriented</h4>
+            <p>I catch what others miss — precision is my superpower as a tester.</p>
+          </div>
+          <div class="info-card glass">
+            <i class="fa-solid fa-bolt card-icon"></i>
+            <h4>Quick Learner</h4>
+            <p>Adaptable to new tools and technologies with a growth mindset.</p>
+          </div>
+          <div class="info-card glass">
+            <i class="fa-solid fa-shield-halved card-icon"></i>
+            <h4>Quality First</h4>
+            <p>Believe that quality isn't an act — it's a habit built into every step.</p>
+          </div>
+          <div class="info-card glass">
+            <i class="fa-solid fa-code card-icon"></i>
+            <h4>Tech Curious</h4>
+            <p>Exploring frontend behavior validation and basic automation testing.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My <span class="accent">Skills</span></h2>
+      </div>
+
+      <div class="skills-tabs" data-animate>
+        <button class="tab-btn active" data-tab="testing">
+          <i class="fa-solid fa-bug"></i> Testing
+        </button>
+        <button class="tab-btn" data-tab="technical">
+          <i class="fa-solid fa-code"></i> Technical
+        </button>
+        <button class="tab-btn" data-tab="tools">
+          <i class="fa-solid fa-toolbox"></i> Tools
+        </button>
+      </div>
+
+      <!-- Testing Skills -->
+      <div class="tab-content active" id="tab-testing" data-animate>
+        <div class="skills-grid">
+          <div class="skill-bar-item" data-skill="95">
+            <div class="skill-info">
+              <span><i class="fa-solid fa-hand-pointer"></i> Manual Testing</span>
+              <span class="skill-pct">95%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-width="95"></div></div>
+          </div>
+          <div class="skill-bar-item" data-skill="88">
+            <div class="skill-info">
+              <span><i class="fa-solid fa-list-check"></i> Functional Testing</span>
+              <span class="skill-pct">88%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-width="88"></div></div>
+          </div>
+          <div class="skill-bar-item" data-skill="85">
+            <div class="skill-info">
+              <span><i class="fa-solid fa-rotate"></i> Regression Testing</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-bar-item" data-skill="90">
+            <div class="skill-info">
+              <span><i class="fa-solid fa-smoke"></i> Smoke Testing</span>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-bar-item" data-skill="80">
+            <div class="skill-info">
+              <span><i class="fa-solid fa-link"></i> Integration Testing</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-bar-item" data-skill="92">
+            <div class="skill-info">
+              <span><i class="fa-solid fa-file-lines"></i> Test Case Design</span>
+              <span class="skill-pct">92%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-width="92"></div></div>
+          </div>
+          <div class="skill-bar-item" data-skill="90">
+            <div class="skill-info">
+              <span><i class="fa-solid fa-bug"></i> Bug Reporting</span>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-bar-item" data-skill="70">
+            <div class="skill-info">
+              <span><i class="fa-solid fa-database"></i> Basic SQL Testing</span>
+              <span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-width="70"></div></div>
+          </div>
+          <div class="skill-bar-item" data-skill="88">
+            <div class="skill-info">
+              <span><i class="fa-solid fa-diagram-project"></i> SDLC & STLC</span>
+              <span class="skill-pct">88%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill" data-width="88"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Technical Skills -->
+      <div class="tab-content" id="tab-technical" data-animate>
+        <div class="tech-cards-grid">
+          <div class="tech-card glass">
+            <i class="fa-brands fa-html5"></i>
+            <span>HTML</span>
+          </div>
+          <div class="tech-card glass">
+            <i class="fa-brands fa-css3-alt"></i>
+            <span>CSS</span>
+          </div>
+          <div class="tech-card glass">
+            <i class="fa-brands fa-js"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="tech-card glass">
+            <i class="fa-solid fa-t"></i>
+            <span>TypeScript (Basic)</span>
+          </div>
+          <div class="tech-card glass">
+            <i class="fa-solid fa-cube"></i>
+            <span>OOP Concepts</span>
+          </div>
+          <div class="tech-card glass">
+            <i class="fa-solid fa-globe"></i>
+            <span>Browser DevTools</span>
+          </div>
+          <div class="tech-card glass">
+            <i class="fa-solid fa-crosshairs"></i>
+            <span>Web Locators</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="tab-content" id="tab-tools" data-animate>
+        <div class="tools-grid">
+          <div class="tool-item glass">
+            <div class="tool-icon"><i class="fa-solid fa-code"></i></div>
+            <div class="tool-info">
+              <strong>VS Code</strong>
+              <span>Code Editor</span>
+            </div>
+          </div>
+          <div class="tool-item glass">
+            <div class="tool-icon"><i class="fa-solid fa-tasks"></i></div>
+            <div class="tool-info">
+              <strong>ClickUp</strong>
+              <span>Project Management</span>
+            </div>
+          </div>
+          <div class="tool-item glass">
+            <div class="tool-icon"><i class="fa-solid fa-table"></i></div>
+            <div class="tool-info">
+              <strong>MS Excel</strong>
+              <span>Data & Test Tracking</span>
+            </div>
+          </div>
+          <div class="tool-item glass">
+            <div class="tool-icon"><i class="fa-solid fa-presentation-screen"></i></div>
+            <div class="tool-info">
+              <strong>PowerPoint</strong>
+              <span>Presentations</span>
+            </div>
+          </div>
+          <div class="tool-item glass">
+            <div class="tool-icon"><i class="fa-solid fa-calculator"></i></div>
+            <div class="tool-info">
+              <strong>Tally</strong>
+              <span>Accounting Software</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-tag">Where I've Worked</span>
+        <h2 class="section-title">Work <span class="accent">Experience</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item" data-animate>
+          <div class="timeline-dot">
+            <i class="fa-solid fa-bug"></i>
+          </div>
+          <div class="timeline-card glass">
+            <div class="timeline-header">
+              <div>
+                <h3>QA Intern</h3>
+                <p class="company">
+                  <i class="fa-solid fa-building"></i> TechAxis
+                </p>
+              </div>
+              <div class="timeline-meta">
+                <span class="badge-period">
+                  <i class="fa-regular fa-calendar"></i> Feb 2026 – Present
+                </span>
+                <span class="badge-type current">Current</span>
+              </div>
+            </div>
+            <div class="timeline-body">
+              <ul class="responsibility-list">
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Performed manual testing of web applications to ensure functionality and quality
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Designed and executed detailed test cases covering functional and regression scenarios
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Reported bugs with proper documentation using structured bug report templates
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Performed UI validation and frontend testing to verify user-facing features
+                </li>
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  Collaborated with developers and project managers via ClickUp for task tracking
+                </li>
+              </ul>
+              <div class="timeline-tags">
+                <span>Manual Testing</span>
+                <span>Bug Reporting</span>
+                <span>UI Testing</span>
+                <span>Test Cases</span>
+                <span>ClickUp</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION SECTION ===== -->
+  <section id="education" class="section education-section">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-tag">Academic Background</span>
+        <h2 class="section-title">My <span class="accent">Education</span></h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card glass" data-animate>
+          <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="edu-info">
+            <span class="edu-tag">Bachelor's Degree</span>
+            <h3>Bachelor in Information Management (BIM)</h3>
+            <p class="edu-institution"><i class="fa-solid fa-university"></i> Bhaktapur Multiple Campus</p>
+            <p class="edu-period"><i class="fa-regular fa-calendar"></i> 2021 – Present (8th Semester)</p>
+            <p class="edu-desc">Comprehensive study of information systems, programming, database management, and IT governance.</p>
+          </div>
+          <div class="edu-badge current">Ongoing</div>
+        </div>
+
+        <div class="edu-card glass" data-animate>
+          <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+          <div class="edu-info">
+            <span class="edu-tag">Higher Secondary (+2)</span>
+            <h3>+2 Management</h3>
+            <p class="edu-institution"><i class="fa-solid fa-university"></i> Nepal Police School</p>
+            <p class="edu-period"><i class="fa-regular fa-calendar"></i> 2019 – 2021</p>
+            <p class="edu-desc">Studied business management, economics, accounting, and computer fundamentals.</p>
+          </div>
+          <div class="edu-badge">Completed</div>
+        </div>
+
+        <div class="edu-card glass" data-animate>
+          <div class="edu-icon"><i class="fa-solid fa-book-open"></i></div>
+          <div class="edu-info">
+            <span class="edu-tag">Secondary Education</span>
+            <h3>SEE (Secondary Education Examination)</h3>
+            <p class="edu-institution"><i class="fa-solid fa-university"></i> Wise Land Secondary School</p>
+            <p class="edu-period"><i class="fa-regular fa-calendar"></i> 2019</p>
+            <p class="edu-desc">Completed secondary education with strong fundamentals in science, math, and computers.</p>
+          </div>
+          <div class="edu-badge">Completed</div>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="section-header mt-3" data-animate>
+        <span class="section-tag">Achievements</span>
+        <h2 class="section-title">Certi<span class="accent">fications</span></h2>
+      </div>
+      <div class="cert-grid">
+        <div class="cert-card glass" data-animate>
+          <div class="cert-icon"><i class="fa-solid fa-certificate"></i></div>
+          <div class="cert-info">
+            <h4>Special MS Excel & Tally</h4>
+            <p>Advanced spreadsheet operations, financial calculations, and accounting software proficiency.</p>
+          </div>
+          <div class="cert-ribbon"></div>
+        </div>
+        <div class="cert-card glass" data-animate>
+          <div class="cert-icon"><i class="fa-solid fa-palette"></i></div>
+          <div class="cert-info">
+            <h4>Graphic Designing</h4>
+            <p>Visual design principles, digital illustration, and design tool proficiency.</p>
+          </div>
+          <div class="cert-ribbon"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-tag">Work Showcase</span>
+        <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+        <!-- Placeholder Project 1 -->
+        <div class="project-card glass" data-animate>
+          <div class="project-preview">
+            <div class="project-placeholder">
+              <i class="fa-solid fa-flask"></i>
+              <span>Coming Soon</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span>Manual Testing</span>
+              <span>Test Cases</span>
+            </div>
+            <h3>E-Commerce Test Suite</h3>
+            <p>Comprehensive test plan and test case documentation for an e-commerce web application covering cart, checkout, and payment modules.</p>
+            <div class="project-links">
+              <a href="#" class="btn-sm btn-outline-sm">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+              <a href="#" class="btn-sm btn-primary-sm">
+                <i class="fa-solid fa-external-link"></i> View
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Placeholder Project 2 -->
+        <div class="project-card glass" data-animate>
+          <div class="project-preview">
+            <div class="project-placeholder">
+              <i class="fa-solid fa-bug"></i>
+              <span>Coming Soon</span>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span>Bug Reports</span>
+              <span>Documentation</span>
+            </div>
+            <h3>Bug Report Templates</h3>
+            <p>Structured bug reporting framework with reproducible steps, severity classification, and environment details documentation.</p>
+            <div class="project-links">
+              <a href="#" class="btn-sm btn-outline-sm">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+              <a href="#" class="btn-sm btn-primary-sm">
+                <i class="fa-solid fa-external-link"></i> View
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Placeholder Project 3 -->
+        <div class="project-card glass add-project" data-animate>
+          <div class="add-project-inner">
+            <i class="fa-solid fa-plus"></i>
+            <h3>More Projects</h3>
+            <p>Projects will be added here soon. Stay tuned!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header" data-animate>
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact <span class="accent">Me</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" data-animate>
+          <p class="contact-intro">
+            I'm actively looking for internship and entry-level QA opportunities. Whether you have a question,
+            a project, or just want to say hi — my inbox is open!
+          </p>
+          <div class="contact-items">
+            <a href="mailto:riyatuitui87@gmail.com" class="contact-item glass">
+              <div class="contact-item-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <span>Email</span>
+                <strong>riyatuitui87@gmail.com</strong>
+              </div>
+            </a>
+            <a href="tel:9841130564" class="contact-item glass">
+              <div class="contact-item-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <span>Phone</span>
+                <strong>+977 9841130564</strong>
+              </div>
+            </a>
+            <div class="contact-item glass">
+              <div class="contact-item-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <span>Location</span>
+                <strong>Bhaktapur, Nepal</strong>
+              </div>
+            </div>
+            <a href="https://linkedin.com/in/riya-tuitui/" target="_blank" rel="noopener" class="contact-item glass">
+              <div class="contact-item-icon"><i class="fa-brands fa-linkedin"></i></div>
+              <div>
+                <span>LinkedIn</span>
+                <strong>linkedin.com/in/riya-tuitui/</strong>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap" data-animate-right>
+          <form class="contact-form glass" id="contactForm">
+            <h3>Send a Message</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">Your Name</label>
+                <input type="text" id="fname" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="femail">Email Address</label>
+                <input type="email" id="femail" placeholder="john@example.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="fsubject">Subject</label>
+              <input type="text" id="fsubject" placeholder="Internship Opportunity" />
+            </div>
+            <div class="form-group">
+              <label for="fmessage">Message</label>
+              <textarea id="fmessage" rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fa-solid fa-circle-check"></i>
+              Message sent! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo">Riya<span>.</span></a>
+          <p>QA Engineer & BIM Student passionate about software quality and continuous improvement.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Connect</h4>
+          <div class="social-icons">
+            <a href="https://linkedin.com/in/riya-tuitui/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="mailto:riyatuitui87@gmail.com" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Riya Tuitui. Crafted with <i class="fa-solid fa-heart"></i> in Bhaktapur, Nepal.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== SCROLL TO TOP BUTTON ===== -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
